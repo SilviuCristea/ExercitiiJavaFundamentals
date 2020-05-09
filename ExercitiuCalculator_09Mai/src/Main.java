@@ -136,9 +136,11 @@ public class Main {
 
         System.out.println("Va rugam alegeti o optiune");
 
+        //Declaram o variabila optiune
         int optiune = 0;
 
         //Utilizatirul introduce o optiune de la tastatura
+
         optiune = scanner2.nextInt();
 
         //Facem alegerea optiunii pana cand apasam tasta 9
