@@ -6,6 +6,11 @@ public class Main {
 
         //o functie care primeste 2 striguri ca parametri si verifica daca al 2 lea string exista in primul string
 
+        String text1="Ana are mere si nu da la nimeni";
+        String text2="Ana are mere";
+
+        verificareString(text1, text2);
+
         // sa se gaseasca cea mai mare valoare dintr-un vector
             // avem un vector de 10 elemnente intregi
 
@@ -20,4 +25,15 @@ public class Main {
             //Sa se afiseze in ordinea inversa
 
     }
+    public  static void verificareString (String text1, String text2){
+
+
+        if (text1.contains(text2)==true){
+            System.out.println("Al doilea string este in primul string");
+        }else {
+            System.out.println("Al doilea string nu este in primul string");
+        }
+
+    }
+
 }
