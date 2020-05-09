@@ -168,6 +168,16 @@ public class Main {
         System.out.println("Ne pare rau. Ati apasat tasta 9 si am iesit din program");
 
 
+        //Sa se reprezinte un calculator care face operatii simple (adunare, scadere,..), operatiile stiintifice dar si urmatoarele operatii cu stringuri:
+        // --concateneaza 2 stringuri
+        // -- verifica daca stringul contine un anumit caracter
+        // -- aduna lungimea a 2 stringuri
+        // -- verifica daca lungimea unui string este numar par sau impar
+        // -- transforma un string intr-un sir de caractere
+        // -- verifica daca stringul incepe cu o vocala
+        // -- numara spatiile dintr-un string
+
+
     }
 
 
