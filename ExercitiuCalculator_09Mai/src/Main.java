@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -176,6 +177,37 @@ public class Main {
         // -- transforma un string intr-un sir de caractere
         // -- verifica daca stringul incepe cu o vocala
         // -- numara spatiile dintr-un string
+
+        //Creem un scaner
+        Scanner scanner3=new Scanner(System.in);
+
+        System.out.println("Introduceti primul string");
+        String primulString=scanner3.nextLine();
+
+        System.out.println("Introduceti al doilea string");
+        String alDoileaString=scanner3.nextLine();
+
+        //Concatenarea celor 2 stringuri
+        System.out.println("Concatenarea stringurilor este");
+
+        //Facem un obiect cu ajutorul clasei CalculatorStringuri pe care il folosim in toate metodele
+
+        CalculatorStringuri calculatorStringuri=new CalculatorStringuri();
+
+        System.out.println(calculatorStringuri.concatenareStringuri(primulString, alDoileaString));
+
+// -- transforma un string intr-un sir de caractere
+
+        // Declaram sirul de caractere
+        char[] sirCaractere=calculatorStringuri.sirCaractere(primulString);
+
+        // Citim caracterele din sir cu for
+
+        for (int i=0; i<sirCaractere.length; i++){
+            
+        }
+
+
 
 
     }
