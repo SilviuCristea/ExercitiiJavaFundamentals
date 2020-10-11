@@ -106,26 +106,44 @@ public class Main {
         Nu ne folosim de oboecte sau metode din Java.
          */
 
-        String text = "ana";
+        String text = "amnnas";
         char[] splitText = text.toCharArray();
         int j = splitText.length-1;
-        int k = 0;
-
+        int isPalindrom = 0;
 
         for (int i = 0; i < splitText.length-1; i++) {
             if (splitText[i] == splitText[j]) {
                 i++;
                 j--;
-                k=0;
+                isPalindrom=0;
             }else{
-                k=1;
+                isPalindrom=1;
             }
         }
-            if(k==0){
+            if(isPalindrom==0){
                 System.out.println("Palindrom");
             }else{
                 System.out.println("Nu e palindrom");
             }
+
+            /* Sirul lui Fibonacci incepe cu 0 si 1 iar urmatoarele numere sunt suma celorlalte 2 anterioare
+            Exemplu: 0 1 1 2 3 5 8 13 21
+            Sa se afisexe numerele din sirul Fibonacci mai mici decat 1030
+             */
+
+        int number1 = 0;
+        int number2 = 1;
+        int searchedNumbers = 0;
+        int searchTo = 1030;
+
+        while(number1<searchTo){
+            System.out.println(number1+" ");
+            int number3 = number1+number2;
+            number1=number2;
+            number2=number3;
+            searchedNumbers++;
+        }
+
 
     }
 }
