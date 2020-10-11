@@ -109,18 +109,23 @@ public class Main {
         String text = "ana";
         char[] splitText = text.toCharArray();
         int j = splitText.length-1;
+        int k = 0;
 
 
         for (int i = 0; i < splitText.length-1; i++) {
             if (splitText[i] == splitText[j]) {
                 i++;
                 j--;
+                k=0;
+            }else{
+                k=1;
+            }
+        }
+            if(k==0){
                 System.out.println("Palindrom");
             }else{
                 System.out.println("Nu e palindrom");
             }
-        }
-
 
     }
 }
