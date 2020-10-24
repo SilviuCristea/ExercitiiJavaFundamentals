@@ -3,9 +3,9 @@ public class SubscriptionFactory {
         if (subsriptionName.equals("Basic")){
             return new BasicSubsription();
         }if (subsriptionName.equals("Gold")){
-            return new GoldSubscrption();
+            return new GoldSubscirption();
         }if (subsriptionName.equals("Platinum")){
-            return new PlatinumSubseiption();
+            return new PlatinumSubscription();
         }else{
             return null;
         }
